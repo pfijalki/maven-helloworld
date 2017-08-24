@@ -14,6 +14,6 @@ cat > ${M2_HOME}/settings.xml <<EOF
                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
       <localRepository>${M2_LOCAL_REPO}</localRepository>
 </settings>
+EOF
 
-export M2_HOME=${HOME}/.m2
-echo "settings.xml updated with local repository to : ${M2_LOCAL_REPO}"
+echo "settings.xml updated with local repository to : " ${M2_LOCAL_REPO}/repository
