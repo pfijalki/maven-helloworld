@@ -3,7 +3,7 @@
 M2_HOME=${HOME}/.m2
 mkdir -p ${M2_HOME}
 
-M2_LOCAL_REPO="${ROOT_FOLDER}/.m2"
+M2_LOCAL_REPO="${WORKING_DIR}/.m2"
 
 cat > ${M2_HOME}/settings.xml <<EOF
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"

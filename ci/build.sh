@@ -2,8 +2,7 @@
 
 set -e
 
-export ROOT_FOLDER=$( pwd )
-export REPO=repo
+export WORKING_DIR=$( pwd )
 
 SCRIPTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
@@ -13,6 +12,6 @@ echo "sleeping"
 
 ls -laR ../
 
-mvn clean test
+mvn -f project-repo/pom.xml clean test
 
 ls -laR ../
