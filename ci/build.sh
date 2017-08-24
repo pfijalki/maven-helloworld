@@ -13,6 +13,6 @@ echo "sleeping"
 
 ls -laR ../
 
-sleep 10m
-
 mvn clean test
+
+ls -laR ../
