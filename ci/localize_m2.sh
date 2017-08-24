@@ -16,4 +16,8 @@ cat > ${M2_HOME}/settings.xml <<EOF
 </settings>
 EOF
 
+echo "${M2_HOME}"
+echo "${HOME}"
+echo "${ROOT_FOLDER}"
+
 echo "settings.xml updated with local repository to : " ${M2_LOCAL_REPO}/repository
