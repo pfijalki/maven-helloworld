@@ -8,10 +8,4 @@ SCRIPTS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 . ${SCRIPTS_DIR}/localize_m2.sh
 
-echo "sleeping"
-
-ls -laR ../
-
 mvn -f project-repo/pom.xml clean test
-
-ls -laR ../
